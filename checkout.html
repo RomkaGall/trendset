@@ -30,6 +30,15 @@
 					</div>
 		
 					<div class="header__links">
+						
+						<div class="language">
+							<span class="select-placeholder" data-value="RU">RU</span>
+							<ul class="language__list">
+								<li class="language-list__item" data-value="RU">RU</li>
+								<li class="language-list__item" data-value="EN">EN</li>
+							</ul>
+						</div>
+		
 						<a href="" class="header__link header__account">
 							<div class="user_icon"></div>
 							<span class="user_name">Иван Иванов</span>
@@ -44,31 +53,23 @@
 		</header>
 	<main class="main">
 		<div class="wr">
-			<div class="sidebar">
+			<div class="sidebar sidebar_with_link_to_home">
 			
 				<div class="sidebar__section">
-					<span class="sidebar__title">Категории</span>
+					<span class="sidebar__title">Личный кабинет</span>
 					<ul class="sidebar__list">
-						<li class="sidebar__item "><a href="#">	Аксесуары</a></li>
-						<li class="sidebar__item"><a href="#">	Бренды</a></li>
-						<li class="sidebar__item"><a href="#">	Винтажная оптика</a></li>
-						<li class="sidebar__item active"><a href="#">	Женские</a></li>
-						<li class="sidebar__item"><a href="#">	Оправы</a></li>
-						<li class="sidebar__item"><a href="#">	Солнцезащитные очки</a></li>
-						<li class="sidebar__item"><a href="#">	Мужские</a></li>
+						<li class="sidebar__item "><a href="#">	Личные данные</a></li>
+						<li class="sidebar__item"><a href="#">	Мои заказы</a></li>
+						<li class="sidebar__item"><a href="#">	Избранное (<span class="sidebar__favorite">4</span>)</a></li>
+						<li class="sidebar__item"><a href="#">	Мои отзывы</a></li>
+						<li class="sidebar__item active"><a href="#">	Корзина</a></li>
+						<li class="sidebar__item"><a href="#">	Мои места</a></li>
 					</ul>
 				</div>
+			
+			
+				<a class="btn btn--small">Главная</a>
 				
-				<div class="sidebar__section">
-					<span class="sidebar__title">Фильтр по цене</span>
-					<ul class="sidebar__list">
-						<li class="sidebar__item active"><a href="#">	Все</a></li>
-						<li class="sidebar__item"><a href="#">	0 грн. - 3,000 грн.</a></li>
-						<li class="sidebar__item"><a href="#">	3,000 грн. - 6,000 грн.</a></li>
-						<li class="sidebar__item"><a href="#">	6,000 грн. - 9,000 грн.</a></li>
-						<li class="sidebar__item"><a href="#">	9,000 грн. +</a></li>
-					</ul>
-				</div>	
 			
 				<div class="social">
 					<a href="https://www.facebook.com" class="social__item facebook"></a>
@@ -78,6 +79,219 @@
 				</div>
 			</div>
 			
+			<div class="checkout">
+				<h2 class="block_title">Заказ на покупку очков Трендсет</h2>
+				
+				<div class="checkout__content">
+					<form class="checkout__form">
+						<div class="input-wr input-wr--select">
+							<span class="select__title">Страна</span>
+			
+							<select class="form__select">
+								<option value="Украина" class="form__option">Украина</option>
+								<option value="Россия" class="form__option">Россия</option>
+								<option value="Беларусь" class="form__option">Беларусь</option>
+								<option value="Казахстан" class="form__option">Казахстан</option>
+							</select>
+						</div>
+			
+						<div class="input-wr input-wr--select">
+							<span class="select__title">Город</span>
+			
+							<select class="form__select">
+								<option value="Одесса" class="form__option">Одесса</option>
+								<option value="Киев" class="form__option">Киев</option>
+								<option value="Москва" class="form__option">Москва</option>
+								<option value="Санкт-Петербург" class="form__option">Санкт-Петербург</option>
+							</select>
+						</div>
+			
+						<div class="input-wr ">
+							<span class="select__title">Имя</span>
+			
+							<input type="text" class="input" placeholder="Имя">
+						</div>
+			
+						<div class="input-wr ">
+							<span class="select__title">Телефон	</span>
+			
+							<input type="text" class="input input--tel" >
+						</div>
+			
+						<div class="checkbox-wr">
+							<div class="radio-wr">
+								<input type="radio" checked="checked" class="radio" name="radio" id="rb1">
+								<label class="container" for="rb1">
+								 Оплатить курьеру при получении
+								</label>
+							</div>
+								
+							<div class="radio-wr">
+								<input type="radio" class="radio" name="radio" id="rb2">
+								<label class="container" for="rb2">
+								 Оплатить наложенным платежом Новой почты
+								</label>
+							</div>
+							
+							<div class="radio-wr">
+								<input type="radio" class="radio" name="radio" id="rb3">
+								<label class="container" for="rb3">
+								 Оплатить сейчас картой онлайн
+								</label>
+							</div>
+			
+						</div>
+			
+						<div class="input-wr input-wr--textarea">
+								<span class="select__title">Точный адрес доставки или комментарий	</span>
+			
+								<textarea  class="textarea">
+									
+								</textarea>
+						</div>
+			
+						<button class="btn btn--big">Заказать</button>
+					</form>
+			
+					<div class="checkout__list">
+			
+						<div class="checkout__top">
+							<span class="order-name">Заказ №000345</span>
+							<span class="date">08.03.2019</span>
+						</div>
+			
+						<div class="items-wr">
+							
+							<div class="checkout__item">
+								<span class="item_number">1.</span>
+			
+								<div class="item__describe">
+									<h2 class="item__title">Солнезащитные очки Lanbao 345671-VBD</h2>
+									<div class="item__info">
+										<div class="item__seller">
+											<span class="item__type">Продавец: </span>
+											<span class="seller__name">Трендсет</span>
+										</div>
+			
+										<div class="item__product">
+											<span class="item__type">Код товара: </span>
+											<span class="item__code">1839с4</span>
+										</div>
+									</div>
+								</div>
+			
+								<span class="item__quantity">1 шт.</span>
+			
+								<span class="item__price">1,200 грн.</span>
+							</div>
+			
+							<div class="checkout__item">
+								<span class="item_number">2.</span>
+			
+								<div class="item__describe">
+									<h2 class="item__title">Солнезащитные очки Lanbao 345671-VBD</h2>
+									<div class="item__info">
+										<div class="item__seller">
+											<span class="item__type">Продавец: </span>
+											<span class="seller__name">Трендсет</span>
+										</div>
+			
+										<div class="item__product">
+											<span class="item__type">Код товара: </span>
+											<span class="item__code">1839с4</span>
+										</div>
+									</div>
+								</div>
+			
+								<span class="item__quantity">10 шт.</span>
+			
+								<span class="item__price">10,200 грн.</span>
+							</div>
+			
+							<div class="checkout__item">
+								<span class="item_number">3.</span>
+			
+								<div class="item__describe">
+									<h2 class="item__title">Солнезащитные очки Lanbao 345671-VBD qqqqqq</h2>
+									<div class="item__info">
+										<div class="item__seller">
+											<span class="item__type">Продавец: </span>
+											<span class="seller__name">Трендсет</span>
+										</div>
+			
+										<div class="item__product">
+											<span class="item__type">Код товара: </span>
+											<span class="item__code">1839с4</span>
+										</div>
+									</div>
+								</div>
+			
+								<span class="item__quantity">100 шт.</span>
+			
+								<span class="item__price">100,200 грн.</span>
+							</div>
+			
+							<div class="checkout__item">
+								<span class="item_number">4.</span>
+			
+								<div class="item__describe">
+									<h2 class="item__title">Солнезащитные очки Lanbao 345671-VBD</h2>
+									<div class="item__info">
+										<div class="item__seller">
+											<span class="item__type">Продавец: </span>
+											<span class="seller__name">Трендсет</span>
+										</div>
+			
+										<div class="item__product">
+											<span class="item__type">Код товара: </span>
+											<span class="item__code">1839с4</span>
+										</div>
+									</div>
+								</div>
+			
+								<span class="item__quantity">1 шт.</span>
+			
+								<span class="item__price">1,200 грн.</span>
+							</div>
+			
+							<div class="checkout__item">
+								<span class="item_number">5.</span>
+			
+								<div class="item__describe">
+									<h2 class="item__title">Солнезащитные очки Lanbao 345671-VBD</h2>
+									<div class="item__info">
+										<div class="item__seller">
+											<span class="item__type">Продавец: </span>
+											<span class="seller__name">Трендсет</span>
+										</div>
+			
+										<div class="item__product">
+											<span class="item__type">Код товара: </span>
+											<span class="item__code">1839с4</span>
+										</div>
+									</div>
+								</div>
+			
+								<span class="item__quantity">1 шт.</span>
+			
+								<span class="item__price">1,200 грн.</span>
+							</div>
+			
+			
+						</div>
+			
+						<div class="checkout__sum">
+								<span class="checkout__sum-name">Итого:</span>
+								<span class="item__quantity">5 шт.</span>
+								<span class="item__price">6,000 грн.</span>
+							</div>
+			
+						<a class="btn btn--small">Вернуться корзину</a>
+			
+					</div>
+				</div>
+			
+			</div>
 		</div>
 			
 	</main>

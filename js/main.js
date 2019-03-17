@@ -56,7 +56,22 @@ $(document).ready(function() {
 		
 		});
 	})
-		
+
+	//language toggler
+	
+	$(function() {
+		$(".select-placeholder").click(function () {
+		$(this).closest('.language').find('.language__list').slideToggle('fast');
+	});
+	$('.language-list__item').on('click', function(){
+		$(this).closest('.language').find('.language-list__item').removeClass('checked');
+		$(this).addClass('checked');
+		var value = $(this).attr('data-value');
+		$(this).closest('.language').find('.select-placeholder').text(value);
+		$(this).closest('.language').find('.select-placeholder').attr('data-value', value);
+		$(this).closest('.language').find('.language__list').animate({height: 'hide'}, 100); 
+	});
+	})		
 
 });
 
