@@ -12,6 +12,16 @@ $(document).ready(function() {
   		nextArrow: $(this).find('.button--next'),
 	});
 
+	$('.slider__with-3-items').slick({
+		dots: true,
+		infinite: false,
+		arrows: true,
+		slidesPerRow: 3,
+    	rows: 2,
+		prevArrow: $(this).find('.button--prev'),
+  		nextArrow: $(this).find('.button--next'),
+	});
+
 	$('.small_slider').slick({
 		dots: true,
 		infinite: false,
