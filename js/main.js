@@ -43,6 +43,15 @@ $(document).ready(function() {
 	  focusOnSelect: true
 	});
 
+	$('.slider_with_big_slides').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  prevArrow: $(this).find('.button--prev'),
+  	  nextArrow: $(this).find('.button--next'),
+		infinite: false,
+		dots: true,
+	});
+
 	
 	//mask
 	$(function () {
