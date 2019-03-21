@@ -10,6 +10,20 @@ $(document).ready(function() {
     	rows: 2,
 		prevArrow: $(this).find('.button--prev'),
   		nextArrow: $(this).find('.button--next'),
+  		 responsive: [
+	    {
+	      breakpoint: 1700,
+	      settings: {
+	        slidesPerRow: 4,
+	      }
+	    },
+	     {
+	      breakpoint: 1440,
+	      settings: {
+	        slidesPerRow: 3,
+	      }
+	    },
+	  ]
 	});
 
 	$('.slider__with-3-items').slick({
