@@ -104,7 +104,21 @@ $(document).ready(function() {
 		$(this).closest('.language').find('.select-placeholder').attr('data-value', value);
 		$(this).closest('.language').find('.language__list').animate({height: 'hide'}, 100); 
 	});
-	})		
+	})	
+
+	// hamburger
+	$('.menu_toggle').click(function(){
+		$(this).toggleClass('open');
+
+		$('.header__mobile').toggleClass('open');
+	});	
+
+	// sidebar btn
+	$('.sidebar_show_btn').click(function(){
+		$(this).toggleClass('open');
+
+		$('.sidebar').toggleClass('open');
+	});	
 
 });
 
