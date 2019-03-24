@@ -23,6 +23,20 @@ $(document).ready(function() {
 	        slidesPerRow: 3,
 	      }
 	    },
+
+	    {
+	      breakpoint: 900,
+	      settings: {
+	        slidesPerRow: 2,
+	      }
+	    },
+
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesPerRow: 1,
+	      }
+	    },
 	  ]
 	});
 
@@ -47,7 +61,8 @@ $(document).ready(function() {
 	  slidesToScroll: 1,
 	  arrows: false,
 	  fade: true,
-	  asNavFor: '.slider_nav'
+	  asNavFor: '.slider_nav',
+	  adaptiveHeight: true
 	});
 	$('.slider_nav').slick({
 	  slidesToShow: 3,
