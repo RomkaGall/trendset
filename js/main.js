@@ -48,6 +48,21 @@ $(document).ready(function() {
     	rows: 2,
 		prevArrow: $(this).find('.button--prev'),
   		nextArrow: $(this).find('.button--next'),
+  		responsive: [
+	    {
+	      breakpoint: 992,
+	      settings: {
+	      	slidesPerRow: 2,
+ 	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	      	slidesPerRow: 1,
+ 	      }
+	    },
+	     
+	  ]
 	});
 
 	$('.small_slider').slick({
@@ -79,6 +94,22 @@ $(document).ready(function() {
   	  nextArrow: $(this).find('.button--next'),
 		infinite: false,
 		dots: true,
+
+		responsive: [
+	    {
+	      breakpoint: 1100,
+	      settings: {
+	      	slidesToShow: 2,
+ 	      }
+	    },
+	    {
+	      breakpoint: 767,
+	      settings: {
+	      	slidesToShow: 1,
+ 	      }
+	    },
+	     
+	  ]
 	});
 
 	
