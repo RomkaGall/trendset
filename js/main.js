@@ -72,6 +72,7 @@ $(document).ready(function() {
 	});
 
 	 $('.slider_for').slick({
+	 	infinite: false,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  arrows: false,
@@ -80,6 +81,7 @@ $(document).ready(function() {
 	  adaptiveHeight: true
 	});
 	$('.slider_nav').slick({
+		infinite: false,
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
 	  asNavFor: '.slider_for',
